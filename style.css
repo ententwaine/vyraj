@@ -111,7 +111,7 @@ body {
 
 .nav-link:hover {
   color: #fff;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
 .nav-link::after {
@@ -293,12 +293,12 @@ body {
   line-height: 1.1;
   margin-bottom: 1.5rem;
   position: relative;
-  text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
 }
 
 .highlight-red {
   color: var(--color-red);
-  text-shadow: 0 0 20px var(--color-red-glow), 0 0 40px var(--color-red-glow);
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.8), 0 0 40px rgba(0, 0, 0, 0.8);
 }
 
 .hero-description {
@@ -346,7 +346,7 @@ body {
 }
 
 .btn-primary:hover {
-  background-color: #ff3366;
+  background-color: var(--color-red-dark);
   box-shadow: 0 0 30px var(--color-red-glow);
   transform: translateY(-2px);
 }
