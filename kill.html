@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VYRAJ | Kill Details</title>
+    <!-- Google Fonts for modern cyberpunk typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div id="noise-overlay"></div>
+
+    <!-- Header Navigation -->
+    <header class="cyber-header">
+      <div class="logo-container">
+        <a href="/">
+          <img src="/logo.png" alt="Vyraj Logo" class="logo">
+        </a>
+        <div class="logo-text">
+          <span class="alliance-name">VYRAJ</span>
+          <span class="alliance-sub">SYNDICATE</span>
+        </div>
+      </div>
+      
+      <nav class="main-nav">
+        <a href="/#codex" class="nav-link">CODEX</a>
+        <a href="/#fleet" class="nav-link">FLEET</a>
+        <a href="/#operations" class="nav-link">OPERATIONS</a>
+        <a href="/killboard.html" class="nav-link active">KILLBOARD</a>
+      </nav>
+
+      <div class="header-meta">
+        <span class="time-code">YC 127</span>
+        <span class="est-date">EST. 2024</span>
+      </div>
+    </header>
+
+    <main class="kill-main">
+      <div class="container">
+        <a href="/killboard.html" class="cyber-btn btn-secondary back-btn">
+          <span class="btn-text">◀ BACK TO KILLBOARD</span>
+        </a>
+
+        <div id="kill-loading" class="cyber-loading">
+          <div class="loading-spinner"></div>
+          <p>DECRYPTING KILL DATA...</p>
+        </div>
+
+        <div id="kill-details-container" class="kill-details-grid hidden">
+          <!-- Victim Section -->
+          <div class="kill-card victim-card">
+            <h2 class="cyber-heading-small">VICTIM</h2>
+            <div class="cyber-line"></div>
+            <div id="victim-info" class="pilot-info-card"></div>
+          </div>
+
+          <!-- Stats Section -->
+          <div class="kill-card stats-card">
+            <h2 class="cyber-heading-small">BATTLE DATA</h2>
+            <div class="cyber-line"></div>
+            <div id="stats-info" class="stats-info-card"></div>
+          </div>
+
+          <!-- Attackers Section -->
+          <div class="kill-card attackers-card">
+            <h2 class="cyber-heading-small">ATTACKERS (<span id="attacker-count">0</span>)</h2>
+            <div class="cyber-line"></div>
+            <div id="attackers-list" class="attackers-list"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="/src/kill.js"></script>
+  </body>
+</html>

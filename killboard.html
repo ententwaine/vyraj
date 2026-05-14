@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VYRAJ | Killboard</title>
+  <!-- Google Fonts for modern cyberpunk typography -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div id="noise-overlay"></div>
+
+  <!-- Header Navigation -->
+  <header class="cyber-header">
+    <div class="logo-container">
+      <a href="/">
+        <img src="/logo.png" alt="Vyraj Logo" class="logo">
+      </a>
+      <div class="logo-text">
+        <span class="alliance-name">VYRAJ</span>
+        <span class="alliance-sub">VYRAJ</span>
+      </div>
+    </div>
+
+    <nav class="main-nav">
+      <a href="/#codex" class="nav-link">CODEX</a>
+      <a href="/#fleet" class="nav-link">FLEET</a>
+      <a href="/#operations" class="nav-link">OPERATIONS</a>
+      <a href="/killboard.html" class="nav-link active">KILLBOARD</a>
+    </nav>
+
+    <div class="header-meta">
+      <span class="time-code">YC 127</span>
+      <span class="est-date">EST. 2024</span>
+    </div>
+  </header>
+
+  <main class="killboard-main">
+    <div class="container">
+      <div class="section-header killboard-header">
+        <h1 class="glitch" data-text="VYRAJ KILLBOARD">VYRAJ <span class="highlight-red">KILLBOARD</span></h1>
+        <p class="hero-description" style="opacity: 1; transform: none; text-align: left; margin: 0 0 2rem 0;">LIVE FEED
+          // ESTABLISHING ESI CONNECTION...</p>
+      </div>
+
+      <div id="killboard-loading" class="cyber-loading">
+        <div class="loading-spinner"></div>
+        <p>DECRYPTING CONCORD LOGS...</p>
+      </div>
+
+      <div class="killboard-table-container">
+        <table class="killboard-table hidden" id="killboard-table">
+          <thead>
+            <tr>
+              <th>TIME</th>
+              <th>SHIP</th>
+              <th>VICTIM</th>
+              <th>FINAL BLOW</th>
+              <th>SYSTEM</th>
+              <th>ISK DESTROYED</th>
+            </tr>
+          </thead>
+          <tbody id="killboard-body">
+            <!-- Dynamically populated -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <script type="module" src="/src/killboard.js"></script>
+</body>
+
+</html>
