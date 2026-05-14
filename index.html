@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VYRAJ | Real You Is Not Enough</title>
+    <!-- Google Fonts for modern cyberpunk typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div id="noise-overlay"></div>
+
+    <!-- Header Navigation -->
+    <header class="cyber-header">
+      <div class="logo-container">
+        <img src="/logo.png" alt="Vyraj Logo" class="logo">
+        <div class="logo-text">
+          <span class="alliance-name">VYRAJ</span>
+          <span class="alliance-sub">SYNDICATE</span>
+        </div>
+      </div>
+      
+      <nav class="main-nav">
+        <a href="#codex" class="nav-link">CODEX</a>
+        <a href="#fleet" class="nav-link">FLEET</a>
+        <a href="#operations" class="nav-link">OPERATIONS</a>
+        <a href="#killboard" class="nav-link">KILLBOARD</a>
+      </nav>
+
+      <div class="header-meta">
+        <span class="time-code">YC 127</span>
+        <span class="est-date">EST. 2024</span>
+      </div>
+    </header>
+
+    <!-- Side Indicators (from reference) -->
+    <div class="side-indicators left-indicator">
+      <div class="indicator-number">02</div>
+      <div class="indicator-bar"><div class="indicator-fill"></div></div>
+      <div class="indicator-number">/04</div>
+    </div>
+    
+    <div class="side-indicators right-indicator">
+      <span class="vertical-text">NULL <span class="dot">•</span> SEC <span class="dot">•</span> DOMINION <span class="dot">•</span> 0718</span>
+    </div>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero" id="home">
+        <!-- Background elements -->
+        <div class="hero-bg dreadnought-bg">
+            <!-- Fallback styling for Dreadnought in CSS -->
+        </div>
+        
+        <!-- Character element -->
+        <div class="hero-character" data-speed="0.5">
+          <img src="/EmperorVeles.jfif" alt="Emperor Veles">
+        </div>
+
+        <!-- Content Overlay -->
+        <div class="hero-content" data-speed="1.2">
+          <div class="briefing-tag">// PILOT BRIEFING — TRANSMISSION 03</div>
+          <h1 class="glitch" data-text="REAL YOU IS NOT ENOUGH">
+            REAL YOU IS <span class="highlight-red">NOT ENOUGH</span>
+          </h1>
+          <p class="hero-description">
+            Forge a new self in the cold dark of New Eden. Vyraj Syndicate is recruiting capsuleers for nullsec sovereignty, industrial empire, and total war.
+          </p>
+          
+          <div class="hero-actions">
+            <a href="#about" class="cyber-btn btn-secondary">
+              <span class="btn-text">KNOW MORE</span>
+              <span class="btn-glitch"></span>
+            </a>
+            <a href="#enlist" class="cyber-btn btn-primary">
+              <span class="btn-text">ENLIST NOW</span>
+              <span class="btn-glitch"></span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Bottom elements -->
+        <div class="hero-bottom-nav">
+          <div class="bottom-nav-item active">
+            <span class="nav-icon">▶</span>
+            <div class="nav-text">
+              <span class="nav-num">//01</span>
+              <span class="nav-label">FLEET DOCTRINE</span>
+            </div>
+          </div>
+          <div class="bottom-nav-item">
+            <span class="nav-icon">▶</span>
+            <div class="nav-text">
+              <span class="nav-num">//02</span>
+              <span class="nav-label">ALLIANCE WAR</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Scrolling Content Section -->
+      <section class="info-section" id="about">
+        <div class="container reveal">
+          <div class="section-header">
+            <h2 class="cyber-heading">ASCENSION <span class="highlight-red">PROTOCOL</span></h2>
+            <div class="cyber-line"></div>
+          </div>
+          
+          <div class="grid-content">
+            <div class="info-card reveal-left">
+              <div class="card-icon">01 //</div>
+              <h3>INDUSTRIAL MIGHT</h3>
+              <p>Harness the wealth of the abyss. Our industrial backbone fuels the war machine. From planetary extraction to capital ship construction, every pilot plays a role in our expansion.</p>
+            </div>
+            <div class="info-card reveal-up" style="transition-delay: 0.2s;">
+              <div class="card-icon">02 //</div>
+              <h3>NULLSEC DOMINION</h3>
+              <p>Claim your space. We defend our sovereignty with unyielding force. Join our fleets, participate in massive engagements, and etch your name into the history of New Eden.</p>
+            </div>
+            <div class="info-card reveal-right" style="transition-delay: 0.4s;">
+              <div class="card-icon">03 //</div>
+              <h3>TRIGLAVIAN TECHNOLOGY</h3>
+              <p>Embrace the triangle. We leverage advanced Triglavian shiplines and abyssal technology to maintain absolute superiority on the battlefield.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- CTA Section -->
+      <section class="cta-section reveal">
+        <div class="cta-container">
+          <img src="/logo.png" alt="Vyraj Icon" class="cta-logo">
+          <h2>THE VOID IS CALLING</h2>
+          <p>Join Vyraj today. Choose your region: DELVE • CATCH • PROVI</p>
+          <button class="cyber-btn btn-primary large-btn">
+            <span class="btn-text">INITIATE RECRUITMENT</span>
+            <span class="btn-glitch"></span>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
