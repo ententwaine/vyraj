@@ -22,12 +22,30 @@
         </div>
       </div>
       
-      <nav class="main-nav">
-        <a href="#codex" class="nav-link">CODEX</a>
-        <a href="#fleet" class="nav-link">FLEET</a>
-        <a href="#operations" class="nav-link">OPERATIONS</a>
-        <a href="/killboard.html" class="nav-link">KILLBOARD</a>
-      </nav>
+      <div class="nav-and-radio" style="display: flex; align-items: center; gap: 2rem;">
+        <nav class="main-nav">
+          <a href="#codex" class="nav-link">CODEX</a>
+          <a href="#fleet" class="nav-link">FLEET</a>
+          <a href="#operations" class="nav-link">OPERATIONS</a>
+          <a href="/killboard.html" class="nav-link">KILLBOARD</a>
+        </nav>
+
+        <!-- Mini Radio Player -->
+        <div id="cyber-radio" class="cyber-radio">
+          <div class="radio-status-dot"></div>
+          <div class="radio-info">
+            <div class="radio-title">DR WILSON RADIO</div>
+            <div class="radio-track">Gone - New Eden Top 40</div>
+          </div>
+          <div class="radio-controls">
+            <button id="radio-play-btn" class="radio-btn">⏸</button>
+            <div class="vol-container">
+              <span style="font-size: 0.5rem; color: var(--color-text-muted)">VOL</span>
+              <input type="range" id="radio-vol" min="0" max="100" value="50">
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div class="header-meta">
         <span class="time-code">YC 127</span>
@@ -136,9 +154,12 @@
             <span class="btn-glitch"></span>
           </button>
         </div>
-      </section>
+      <!-- Hidden SoundCloud Iframe for API control -->
+      <iframe id="sc-widget" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay; encrypted-media" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2320677710&color=%23ff0000&auto_play=true&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=false" style="position:absolute; visibility:hidden; width:1px; height:1px;"></iframe>
     </main>
 
+    <script src="https://w.soundcloud.com/player/api.js"></script>
     <script src="/src/main.js" type="module"></script>
+    <script src="/src/radio.js" type="module"></script>
 </body>
 </html>
